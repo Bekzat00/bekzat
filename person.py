@@ -1,13 +1,13 @@
 class Person:
 
-   def __init__(self, name=None, surname=None, age=0, gender=None):
+   def __init__(self, name, surname, age, gender=None):
        self.name = name
        self.surname = surname
        self.__age = age
        self.gender = gender
 
 
-   def __walk(self):
+   def __walk__(self):
        print('Person',self.name, 'is walking')
 
    def info(self):
